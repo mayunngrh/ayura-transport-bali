@@ -18,7 +18,7 @@ const Navbar = () => {
     { name: "Charter Car", path: "/charter-car" },
   ];
   return (
-    <div className="fixed top-0 left-1/2 transform -translate-x-1/2 w-[90%] max-w-[1240px] rounded-full z-50 px-4">
+    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[90%] max-w-[1240px] rounded-full z-50 px-4">
       <div className=" flex justify-between items-center h-48 px-4 max-w-[1240px] mx-auto text-white">
         {/* Company Logo */}
         <img
@@ -33,7 +33,7 @@ const Navbar = () => {
             <li
               key={item.path}
               className={`px-4 py-2 font-bold text-[16px] rounded-full ${
-                location.pathname === item.path ? "bg-gray-500" : ""
+                location.pathname === item.path ? "bg-gray-500/60" : ""
               }`}
             >
               <Link to={item.path}>{item.name}</Link>
