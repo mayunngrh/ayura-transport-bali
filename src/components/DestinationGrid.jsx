@@ -1,5 +1,5 @@
 import React from "react";
-import destinations from "../data/destinations"; // Import data
+import destinations from "../data/Destinations"; // Import data
 
 const DestinationGrid = () => {
   return (

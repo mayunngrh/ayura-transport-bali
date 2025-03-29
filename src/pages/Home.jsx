@@ -7,6 +7,7 @@ import { GiMeditation } from "react-icons/gi";
 import DestinationGrid from "../components/DestinationGrid";
 import ExperienceSection from "../components/ExperienceSection";
 import FunActivities from "../components/FunActivities";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -92,8 +93,11 @@ const Home = () => {
         <ExperienceSection />
       </div>
       {/* Experience Section Destination */}
-      <div className="mt-115">
+      <div className="">
         <FunActivities />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
