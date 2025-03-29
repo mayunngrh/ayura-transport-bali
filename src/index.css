@@ -1,5 +1,7 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
 body {
-  background-color: #000300;
+  font-family: "Montserrat", sans-serif;
+  /* background-color: black; */
 }
