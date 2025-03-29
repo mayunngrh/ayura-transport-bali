@@ -14,7 +14,6 @@ const Home = () => {
       />
       {/* Overlay (optional for darkening the image) */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
-
       {/* Content */}
       <div className="absolute max-w-[1240px] w-full left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 px-4 text-white">
         {/* text and typed-react*/}
