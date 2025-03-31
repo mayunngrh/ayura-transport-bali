@@ -15,14 +15,19 @@ const FunActivities = () => {
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 768, // Mobile view
+        breakpoint: 1024, // Tablet (md)
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Mobile (sm)
         settings: {
           slidesToShow: 1,
         },
       },
     ],
   };
-
   return (
     <div className="mb-12 px-6 ">
       {/* Title */}
@@ -30,24 +35,27 @@ const FunActivities = () => {
         Fun Activities
       </h2>
 
-      {/* Slider Section */}
-      <Slider {...settings}>
-        {funActivitiesData.map((activity) => (
-          <div key={activity.id} className="px-2">
-            <div className="bg-white mx-10 rounded-6xl shadow-lg overflow-hidden">
-              <img
-                src={activity.image}
-                alt={activity.title}
-                className="w-full h-86 object-cover rounded-t-2xl"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-bold">{activity.title}</h3>
-                <p className="text-gray-600 text-sm">{activity.description}</p>
+      <div className=" mx-auto">
+        <Slider {...settings}>
+          {funActivitiesData.map((activity) => (
+            <div key={activity.id} className="px-2">
+              <div className="bg-white mx-4 md:mx-6 rounded-2xl shadow-lg overflow-hidden">
+                <img
+                  src={activity.image}
+                  alt={activity.title}
+                  className="w-full h-[250px] md:h-[300px] object-cover rounded-t-2xl"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-bold">{activity.title}</h3>
+                  <p className="text-gray-600 text-sm">
+                    {activity.description}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

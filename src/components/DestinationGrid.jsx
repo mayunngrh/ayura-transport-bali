@@ -3,11 +3,11 @@ import destinations from "../data/Destinations"; // Import data
 
 const DestinationGrid = () => {
   return (
-    <div className="max-w-[1240px] max-h-[800px] mx-auto mt-10 px-4">
+    <div className="max-w-[1240px] mx-auto mt-10 px-4">
       <h2 className="text-4xl font-bold text-start mt-28 mb-12  stroke-2 stroke-black">
         Countless Destination
       </h2>
-      <div className="grid grid-cols-3 gap-4 max-h-[450px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {destinations.map((item, index) => (
           <a
             key={index}
