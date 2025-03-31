@@ -21,7 +21,7 @@ const About = () => {
           <p className='text-white text-[48px] text-center font-bold'> We are ready to accompany you on your journey.</p>
         </div>
         <div className="mx-auto my-20">
-          <button className="flex justify-center items-center rounded-full bg-white w-60 mt-4 py-2 text-[#003000] font-semibold hover:bg-gray-400/20 transition duration-300 cursor-pointer">
+          <button className="flex justify-center items-center rounded-full bg-white w-60 mt-4 py-2 text-[#003000] font-semibold hover:bg-gray-100/40 transition duration-300 cursor-pointer">
             <FaWhatsapp size={20} />
             <p className="px-4">Learn More</p>
           </button>

@@ -42,11 +42,11 @@ export default function ExpandableTable() {
                 </thead>
                 <tbody className="bg-white text-center align-middle">
                     {locations.slice(0, isExpanded ? locations.length : 5).map((location, index) => (
-                        <tr key={index} className="bg-white hover:bg-black hover:text-white">
+                        <tr key={index} className="group bg-white hover:bg-black hover:text-white">
                             <td className="px-4 py-2 rounded-full italic">{location.name}</td>
                             <td className="px-4 py-2 rounded-full font-bold">IDR {location.price} / US {location.usd}</td>
-                            <td className="px-4 py-2 rounded-full">
-                                <button className="flex w-full h-full justify-center items-center rounded-full bg-white text-[#003000] font-semibold hover:bg-gray-400/20 transition duration-300 cursor-pointer">
+                            <td className="px-2 rounded-full">
+                                <button className="border border-white hover:border-white flex w-full h-full justify-center items-center rounded-full bg-white hover:bg-black text-[#003000] font-semibold hover:bg-gray-400/20 transition duration-300 cursor-pointer">
                                     <p className="px-4 text-blue-500 italic font-black">Book Now</p>
                                     <FaWhatsapp className="text-green-500" size={20} />
                                 </button>
