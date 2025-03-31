@@ -3,7 +3,7 @@ import destinations from "../data/Destinations"; // Import data
 
 const DestinationGrid = () => {
   return (
-    <div className="max-w-[1240px] max-h-[800px] mx-auto mt-20 px-4">
+    <div className="max-w-[1240px] max-h-[800px] mx-auto mt-10 px-4">
       <h2 className="text-4xl font-bold text-start mt-28 mb-12  stroke-2 stroke-black">
         Countless Destination
       </h2>

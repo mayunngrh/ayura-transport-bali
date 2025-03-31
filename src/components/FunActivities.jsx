@@ -24,7 +24,7 @@ const FunActivities = () => {
   };
 
   return (
-    <div className="  px-6 py-12">
+    <div className=" px-6 py-12">
       {/* Title */}
       <h2 className="max-w-[1240px] mx-auto text-3xl md:text-4xl font-bold text-black mb-6">
         Fun Activities
@@ -34,11 +34,11 @@ const FunActivities = () => {
       <Slider {...settings}>
         {funActivitiesData.map((activity) => (
           <div key={activity.id} className="px-2">
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="bg-white mx-10 rounded-6xl shadow-lg overflow-hidden">
               <img
                 src={activity.image}
                 alt={activity.title}
-                className="w-full h-64 object-cover rounded-t-2xl"
+                className="w-full h-86 object-cover rounded-t-2xl"
               />
               <div className="p-4">
                 <h3 className="text-lg font-bold">{activity.title}</h3>

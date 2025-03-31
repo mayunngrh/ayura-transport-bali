@@ -8,6 +8,7 @@ import DestinationGrid from "../components/DestinationGrid";
 import ExperienceSection from "../components/ExperienceSection";
 import FunActivities from "../components/FunActivities";
 import Footer from "../components/Footer";
+import OurServices from "../components/OurServices";
 
 const Home = () => {
   return (
@@ -48,7 +49,7 @@ const Home = () => {
           </div>
 
           {/* bottom description */}
-          <div className="flex justify-between absolute top-120">
+          <div className="flex justify-between absolute top-100">
             {/* Item 1 */}
             <div className="flex items-center">
               <div className="rounded-full bg-gray-400/20">
@@ -95,6 +96,9 @@ const Home = () => {
       {/* Experience Section Destination */}
       <div className="">
         <FunActivities />
+      </div>
+      <div className="">
+        <OurServices />
       </div>
       <div>
         <Footer />
