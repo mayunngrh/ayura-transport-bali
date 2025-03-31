@@ -32,7 +32,7 @@ export default function Footer() {
           </p>
 
           {/* Learn More Button */}
-          <button className="mt-8 bg-white text-black px-5 py-2 rounded-full flex items-center gap-2 hover:bg-gray-300 transition">
+          <button className="mt-8 bg-white border border-1 border-black text-black px-5 py-2 rounded-full flex items-center gap-2 hover:invert transition">
             <FaWhatsapp size={24} />
             Learn More
           </button>

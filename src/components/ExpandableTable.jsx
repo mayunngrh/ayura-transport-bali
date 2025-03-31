@@ -4,10 +4,12 @@ import { FaWhatsapp, FaCaretDown, FaCaretUp } from "react-icons/fa";
 export default function ExpandableTable() {
     const [isExpanded, setIsExpanded] = useState(false);
 
+    // Expand And Minimize Control
     const toggleExpand = () => {
         setIsExpanded(!isExpanded);
     };
 
+    // Data
     const locations = [
         { name: "Kuta", price: "150K", usd: "$9" },
         { name: "Legian", price: "200K", usd: "$12" },
@@ -33,6 +35,8 @@ export default function ExpandableTable() {
     return (
         <div className="overflow-x-auto p-4">
             <table className="min-w-full border-separate text-center align-middle">
+
+                {/* Head Of Table  */}
                 <thead className="bg-gray-200 text-center">
                     <tr>
                         <th className="px-4 py-2 rounded-full w-100 font-bold">District</th>
@@ -40,20 +44,24 @@ export default function ExpandableTable() {
                         <th className="px-4 py-2 rounded-full w-50 font-bold">Booking</th>
                     </tr>
                 </thead>
+
+                {/* Body/Content Of Table */}
                 <tbody className="bg-white text-center align-middle">
                     {locations.slice(0, isExpanded ? locations.length : 5).map((location, index) => (
                         <tr key={index} className="group bg-white hover:bg-black hover:text-white">
                             <td className="px-4 py-2 rounded-full italic">{location.name}</td>
                             <td className="px-4 py-2 rounded-full font-bold">IDR {location.price} / US {location.usd}</td>
-                            <td className="px-2 rounded-full">
-                                <button className="border border-white hover:border-white flex w-full h-full justify-center items-center rounded-full bg-white hover:bg-black text-[#003000] font-semibold hover:bg-gray-400/20 transition duration-300 cursor-pointer">
-                                    <p className="px-4 text-blue-500 italic font-black">Book Now</p>
+                            <td className="px-4 py-2 rounded-full">
+                                <div className="rounded-full border border-white flex w-full h-full justify-center items-center bg-white hover:bg-black text-[#003000] font-semibold transition duration-300 cursor-pointer">
+                                    <p className="text-blue-500 italic font-black">Book Now</p>
                                     <FaWhatsapp className="text-green-500" size={20} />
-                                </button>
+                                </div>
                             </td>
                         </tr>
                     ))}
-                    <tr className="bg-white hover:bg-black hover:text-white" onClick={toggleExpand}>
+
+                    {/* Toggle Expand/Minimize */}
+                    <tr className="bg-white hover:bg-black hover:text-white transition duration-300" onClick={toggleExpand}>
                         <td className="px-4 py-2 rounded-full text-center border border-black hover:border-white" colSpan="3">
                             {isExpanded ? (
                                 <div className="flex flex-col items-center">
@@ -70,6 +78,6 @@ export default function ExpandableTable() {
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div >
     );
 }
