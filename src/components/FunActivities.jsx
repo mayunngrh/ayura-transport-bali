@@ -24,9 +24,9 @@ const FunActivities = () => {
   };
 
   return (
-    <div className=" px-6 py-12">
+    <div className="mb-12 px-6 ">
       {/* Title */}
-      <h2 className="max-w-[1240px] mx-auto text-3xl md:text-4xl font-bold text-black mb-6">
+      <h2 className="max-w-[1240px] mb-12 mx-auto text-3xl md:text-4xl font-bold text-black ">
         Fun Activities
       </h2>
 
