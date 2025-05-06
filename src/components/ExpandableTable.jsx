@@ -11,25 +11,25 @@ export default function ExpandableTable() {
 
     // Data
     const locations = [
-        { name: "Kuta", sprice: "150K", susd: "$9", bprice: "150K", busd: "$9" },
-        { name: "Legian", sprice: "200K", susd: "$12", bprice: "150K", busd: "$9" },
-        { name: "Seminyak", sprice: "250K", susd: "$15", bprice: "150K", busd: "$9" },
-        { name: "Jimbaran", sprice: "250K", susd: "$15", bprice: "150K", busd: "$9" },
-        { name: "Nusa Dua", sprice: "250K", susd: "$15", bprice: "150K", busd: "$9" },
-        { name: "Sanur", sprice: "250K", susd: "$15", bprice: "150K", busd: "$9" },
-        { name: "Kerobokan", sprice: "250K", susd: "$15", bprice: "150K", busd: "$9" },
-        { name: "Canggu", sprice: "300K", susd: "$18", bprice: "150K", busd: "$9" },
-        { name: "Munggu", sprice: "400K", susd: "$24", bprice: "150K", busd: "$9" },
-        { name: "Uluwatu", sprice: "400K", susd: "$24", bprice: "150K", busd: "$9" },
-        { name: "Tanah Lot", sprice: "400K", susd: "$24", bprice: "150K", busd: "$9" },
-        { name: "Ubud", sprice: "400K", susd: "$24", bprice: "150K", busd: "$9" },
-        { name: "Padang Bai", sprice: "500K", susd: "$30", bprice: "150K", busd: "$9" },
-        { name: "Candidasa", sprice: "600K", susd: "$36", bprice: "150K", busd: "$9" },
-        { name: "Kintamani", sprice: "650K", susd: "$39", bprice: "150K", busd: "$9" },
-        { name: "Lovina", sprice: "750K", susd: "$45", bprice: "150K", busd: "$9" },
-        { name: "Amed", sprice: "800K", susd: "$48", bprice: "150K", busd: "$9" },
-        { name: "Pamutaran", sprice: "900K", susd: "$54", bprice: "150K", busd: "$9" },
-        { name: "Gilimanuk", sprice: "950K", susd: "$57", bprice: "150K", busd: "$9" }
+        { name: "Kuta", sprice: "150K", susd: "$9", bprice: "550K", busd: "$33" },
+        { name: "Legian", sprice: "200K", susd: "$12", bprice: "600K", busd: "$36" },
+        { name: "Seminyak", sprice: "250K", susd: "$15", bprice: "700K", busd: "$42" },
+        { name: "Jimbaran", sprice: "250K", susd: "$15", bprice: "750K", busd: "$45" },
+        { name: "Nusa Dua", sprice: "250K", susd: "$15", bprice: "750K", busd: "$45" },
+        { name: "Sanur", sprice: "250K", susd: "$15", bprice: "700K", busd: "$42" },
+        { name: "Kerobokan", sprice: "250K", susd: "$15", bprice: "800K", busd: "$48" },
+        { name: "Canggu", sprice: "300K", susd: "$18", bprice: "850K", busd: "$51" },
+        { name: "Munggu", sprice: "400K", susd: "$24", bprice: "900K", busd: "$54" },
+        { name: "Uluwatu", sprice: "400K", susd: "$24", bprice: "850K", busd: "$51" },
+        { name: "Tanah Lot", sprice: "400K", susd: "$24", bprice: "1000K", busd: "$60" },
+        { name: "Ubud", sprice: "400K", susd: "$24", bprice: "900K", busd: "$54" },
+        { name: "Padang Bai", sprice: "500K", susd: "$30", bprice: "1100K", busd: "$66" },
+        { name: "Candidasa", sprice: "600K", susd: "$36", bprice: "1300K", busd: "$78" },
+        { name: "Kintamani", sprice: "650K", susd: "$39", bprice: "1300K", busd: "$78" },
+        { name: "Lovina", sprice: "750K", susd: "$45", bprice: "1500K", busd: "$90" },
+        { name: "Amed", sprice: "800K", susd: "$48", bprice: "1600K", busd: "$96" },
+        { name: "Pamutaran", sprice: "900K", susd: "$54", bprice: "1800K", busd: "$108" },
+        { name: "Gilimanuk", sprice: "950K", susd: "$57", bprice: "1900K", busd: "$114" }
     ];
 
     return (
@@ -37,13 +37,24 @@ export default function ExpandableTable() {
             <table className="min-w-full border-separate text-center align-middle">
 
                 {/* Head Of Table  */}
+                <thead className="text-center text-white">
+                    <tr>
+                        <th className="px-4 py-2 rounded-full italic font-light"></th>
+                        <th className="px-4 py-2 rounded-full italic font-light">1-5 seats</th>
+                        <th className="px-4 py-2 rounded-full italic font-light">1-20 seats</th>
+                        <th className="px-4 py-2 rounded-full italic font-light"></th>
+                    </tr>
+                </thead>
                 <thead className="bg-gray-200 text-center">
                     <tr>
                         <th className="px-4 py-2 rounded-full w-100 font-bold">District</th>
                         <th className="px-4 py-2 rounded-full w-60 font-bold">Small Car</th>
-                        <th className="px-4 py-2 rounded-full w-60 font-bold">Big Car</th>
+                        <th className="px-4 py-2 rounded-full w-60 font-bold">Big Car
+                            {/* <p className="px-4 py-2 rounded-full italic font-light">1-20 seats</p> */}
+                        </th>
                         <th className="px-4 py-2 rounded-full w-50 font-bold">Booking</th>
                     </tr>
+
                 </thead>
 
                 {/* Body/Content Of Table */}

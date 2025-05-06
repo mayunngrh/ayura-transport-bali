@@ -111,7 +111,7 @@ const CharterCar = () => {
               </div>
             </div>
             <div className='flex justify-center mt-5'>
-              <button className="text-white flex justify-center items-center rounded-full bg-black w-60 mt-4 py-2 text-[#003000] font-semibold hover:bg-gray-500 transition duration-300 cursor-pointer">
+              <button className="text-white border border-white flex justify-center items-center rounded-full bg-black w-60 mt-4 py-2 text-[#003000] font-semibold hover:invert transition duration-300 cursor-pointer">
                 <p className="px-4">Reserve Now</p>
                 <FaArrowRight className="" />
               </button>
